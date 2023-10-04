@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 40vmax;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+h1 {
+  margin-top: 10px;
+  padding-top: 8px;
+  text-align: center;
+  color: rgba(27, 5, 47, 0.749);
+  letter-spacing: 3px;
+}
+
+hr {
+  width: 55%;
+
+  margin: 0 auto;
+  color: rgb(22, 1, 42);
+}
+form {
+  background-color: white;
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+.submit__btn {
+  padding: 6px;
+  font-size: 1rem;
+  width: 100px;
+  margin: 1rem;
+  margin-left: 2rem;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.submit__btn:hover {
+  background-color: rgba(
+    96,
+    92,
+    99,
+    0.493
+  ); /* Change to a different color on hover */
+}
+
+/*************************
+  Tab & i-Pad Device
+  *******************/
+
+@media (max-width: 1200px) {
+  body {
+    /* Adjust body styles for medium screens */
+    background-size: cover;
+    align-items: flex-start;
+  }
+
+  .container {
+    /* Adjust container styles for medium screens */
+    margin-top: 60px;
+    padding-top: 5px;
+    height: 500px;
+    border-radius: 10px;
+  }
+  form {
+    padding: 0px 15px;
+  }
+}
+
+/*************************
+  small moblie Device
+  *******************/
+@media (max-width: 500px) {
+  form {
+    padding: 0 8px;
+  }
+}

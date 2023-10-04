@@ -1,0 +1,29 @@
+.input_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 0.5rem 2rem;
+  width: 300px;
+}
+label {
+  padding: 3px;
+  margin: 5px;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+span {
+  color: red;
+  text-align: center;
+  margin: 0.1rem;
+  padding: 2px;
+  display: none;
+}
+
+input:invalid ~ span {
+  display: inline-block;
+}
